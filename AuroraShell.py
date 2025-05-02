@@ -63,7 +63,7 @@ try:
                     elif len(arguments) == 1:
                         directoryTempStorage = os.listdir(currentDirectory + "./")
                         for content in directoryTempStorage:
-                            item_path = os.path.join(currentDirectory, content) # Adicionado para obter o caminho completo
+                            item_path = os.path.join(currentDirectory, content)
                             if os.path.isdir(item_path):
                                 print("| <DIR> ", content)
                             elif os.path.isfile(item_path):

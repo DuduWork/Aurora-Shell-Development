@@ -68,7 +68,7 @@ try:
                                 print("| <DIR> ", content)
                             elif os.path.isfile(item_path):
                                 print("| <FILE>", content)
-                elif arguments[0] == "CHDISK" or "CD":
+                elif arguments[0] == ["CHDISK", "CD"]:
                     try:
                         previousDirectory = currentDirectory
                         currentDirectory = currentDirectory + "\\" + arguments[1]
